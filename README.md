@@ -2,7 +2,7 @@
 
 ChantMuse is a modern web-based editor for Gregorian chant using the GABC format. It offers syntax highlighting, validation, and export functionality, helping musicians and liturgists create chant files more efficiently.
 
----
+
 
 ## 🚀 Features (Phase 1)
 - 🎼 Monaco-based editor for GABC syntax
@@ -11,7 +11,7 @@ ChantMuse is a modern web-based editor for Gregorian chant using the GABC format
 - 📤 Export editor content to `.gabc` file
 - 💻 Responsive design with Tailwind CSS
 
----
+
 
 ## 🧰 Tech Stack
 - React + TypeScript + Vite
@@ -19,7 +19,7 @@ ChantMuse is a modern web-based editor for Gregorian chant using the GABC format
 - Tailwind CSS
 - Deployed via AWS Amplify (or S3 + CloudFront)
 
----
+
 
 ## 🛠 Setup
 
