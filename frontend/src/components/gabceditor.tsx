@@ -2,35 +2,18 @@
   import Editor, { loader } from '@monaco-editor/react'
   import { gabcLanguageDefinition } from './gabcLang'
 
-  const DEFAULT_GABC = `name: incipit;
-gabc-copyright: copyright on this gabc file;
-score-copyright: copyright on the source score;
-office-part: introitus/...;
-occasion: in church calendar;
-meter: for metrical hymns;
-commentary: source of words;
-arranger: name of arranger;
-author: if known;
-date: xi c;
-manuscript: ms name;
-manuscript-reference: e.g. CAO reference;
-manuscript-storage-place: library/monastery;
-book: from which score taken;
-language: of the lyrics;
-transcriber: writer of gabc;
-transcription-date: 2009;
-mode: 6;
-user-notes: whatever other comments you wish to make;
-annotation: IN.;
-annotation: 6; 
-%% 
-(c4) Glo(hi)ri(h) a(g) in(f) ex(g)cel(h)sis(h) De(h)o(h.) (::)`
 
-  export default function GabcEditor() {
-    const editorContent = useRef(DEFAULT_GABC)
+interface Props {
+  value: string
+  onChange: (val: string) => void
+}
 
-    const handleEditorChange = (value = '') => {
-      editorContent.current = value
+  export default function GabcEditor({ value, onChange }: Props) {
+    const editorContent = useRef(value)
+
+    const handleEditorChange = (val = '') => {
+      editorContent.current = val
+      onChange(val)
     }
 
     const exportToGabc = () => {
@@ -54,12 +37,13 @@ annotation: 6;
     }, [])
 
     return (
-      <div className="w-full max-w-4xl mx-auto flex flex-col gap-4">
+  <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+    <div className="flex flex-col items-center gap-4">
+      <div className="w-[800px]">
         <Editor
           height="400px"
-          width="800px"
           defaultLanguage="gabc"
-          defaultValue={DEFAULT_GABC}
+          value={value}
           onChange={handleEditorChange}
           theme="vs-dark"
           options={{
@@ -68,12 +52,15 @@ annotation: 6;
             wordWrap: 'on',
           }}
         />
-        <button
-          onClick={exportToGabc}
-          className="self-start bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-        >
-          Export as .gabc
-        </button>
       </div>
-    )
+      <button
+        onClick={exportToGabc}
+        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 p-2px"
+      >
+        Export as .gabc
+      </button>
+    </div>
+  </div>
+)
+
   }
