@@ -2,7 +2,7 @@
 
 import './App.css'
 import GabcEditor from './components/gabceditor'
-import ChantRenderer from './components/chantRenderer'
+import ChantRenderer from './components/ChantRenderer'
 import { useState } from 'react'
 
 function App() {
