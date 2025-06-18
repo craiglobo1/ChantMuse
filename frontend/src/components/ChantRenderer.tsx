@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react'
 
 // @ts-ignore
 import { ChantContext, Gabc, ChantScore } from '../../exsurge/dist/exsurge.es.js'
-import { loadChantScore } from '../utils/loadChantScore'
 
 interface Props {
   gabc: string
