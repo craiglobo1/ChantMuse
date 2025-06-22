@@ -37,8 +37,8 @@ interface Props {
     }, [])
 
     return (
-  <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-    <div className="flex flex-col items-center gap-4">
+  <div className="pt-40 min-h-screen bg-gray-100 flex justify-center">
+    <div className="flex flex-col  items-center">
       <div className="w-[800px]">
         <Editor
           height="400px"

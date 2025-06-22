@@ -40,7 +40,7 @@ export default function ChantRenderer({ gabc }: Props) {
   return (
     <div
       ref={containerRef}
-      className="bg-white p-4 rounded border overflow-auto"
+      className="p-4 rounded border overflow-auto"
     />
   )
 }
