@@ -33,32 +33,34 @@ interface Props {
           monaco.languages.setMonarchTokensProvider('gabc', gabcLanguageDefinition)
           console.log('Registered gabc language')
         }
+        // monaco.editor.defineTheme('solarized-light',)
       })
     }, [])
 
     return (
   <div className="pt-40 min-h-screen bg-gray-100 flex justify-center">
     <div className="flex flex-col  items-center">
-      <div className="w-[800px]">
+      <div className="w-[800px] rounded-lg">
         <Editor
           height="400px"
           defaultLanguage="gabc"
           value={value}
           onChange={handleEditorChange}
-          theme="vs-dark"
+          theme="vs-light"
           options={{
             minimap: { enabled: false },
             fontSize: 14,
             wordWrap: 'on',
+            automaticLayout: true,
           }}
         />
       </div>
-      <button
+      {/* <button
         onClick={exportToGabc}
         className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 p-2px"
       >
         Export as .gabc
-      </button>
+      </button> */}
     </div>
   </div>
 )

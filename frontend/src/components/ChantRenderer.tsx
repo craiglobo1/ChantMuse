@@ -19,6 +19,10 @@ export default function ChantRenderer({ gabc }: Props) {
 
       // Step 2: Create a ChantScore manually
       const score = new exsurge.ChantScore(ctxt, mappings, true)
+      
+      //map GABC elements to audio
+      
+      // console.log('Parsed GABC mappings:', mappings)
 
       // Step 3: Layout and render
       score.performLayout(ctxt)
@@ -40,7 +44,7 @@ export default function ChantRenderer({ gabc }: Props) {
   return (
     <div
       ref={containerRef}
-      className="p-4 rounded border overflow-auto"
+      className="p-4 rounded bg-white-100"
     />
   )
 }

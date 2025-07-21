@@ -4,18 +4,27 @@ import './App.css'
 import GabcEditor from './components/gabceditor'
 import ChantRenderer from './components/ChantRenderer'
 import { useState } from 'react'
-import Toggle from "./components/toggle";
+import { useEffect } from 'react'
+
+import Navbar from './components/Navbar'
+import Toggle from './components/toggle'
 
 function App() {
   const [gabcText, setGabcText] = useState<string>(`(c4) Glo(hi)ri(h) a(g) in(f) ex(g)cel(h)sis(h) De(h)o(h.) (::)`)
-  const handlePowerToggle = (state: boolean) => {
-    console.log("Power is", state ? "ON" : "OFF");
-  };
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false)
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add('dark')
+    } else {
+      document.body.classList.remove('dark')
+    }
+  }, [isDarkMode])
 
   return (
     <>
-      <Toggle label="Power" onToggle={handlePowerToggle} />
-      <h1>Chant Muse</h1>
+      <Navbar />
+      <h1 className='text-green-500 dark:text-white Title'>ChantMuse</h1>
       <ChantRenderer gabc={gabcText} />
       <GabcEditor value={gabcText} onChange={setGabcText}/>
     </>
