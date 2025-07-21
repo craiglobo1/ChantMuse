@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Navbar from '../components/Navbar'
+import GabcEditor from '../components/gabceditor';
 
 
 export default class AboutPage extends React.Component{
@@ -16,6 +17,8 @@ export default class AboutPage extends React.Component{
             <div>
                 <Navbar />
                 <h1 className='dark:text-white Title'>About</h1>
+                <GabcEditor value={this.state.gabcText} onChange={this.handleGabcChange}/>
+                
             </div>
         );
     }

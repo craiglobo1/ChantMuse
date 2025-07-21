@@ -51,16 +51,10 @@ interface Props {
             minimap: { enabled: false },
             fontSize: 14,
             wordWrap: 'on',
-            automaticLayout: true,
+            // automaticLayout: true,
           }}
         />
       </div>
-      {/* <button
-        onClick={exportToGabc}
-        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 p-2px"
-      >
-        Export as .gabc
-      </button> */}
     </div>
   </div>
 )
