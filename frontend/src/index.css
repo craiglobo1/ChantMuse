@@ -47,6 +47,11 @@ h1.Title{
   user-select: none;
   cursor: pointer; 
 }
+.Navbar > * a{
+  color: #374151;
+  text-decoration: none;
+}
+
 .Navbar > * a:hover{
   color: #1e40af;
 }
