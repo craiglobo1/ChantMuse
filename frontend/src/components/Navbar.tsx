@@ -10,9 +10,9 @@ export default class Navbar extends React.Component<INavbarProps> {
       <div className='Navbar'>
         <nav className="bg-gray-800 p-4">
           <div className="container mx-auto flex justify-between items-center">
-              <a><Link to="/">Editor</Link></a>
-              <a><Link to="/scores">Scores</Link></a>
-              <a><Link to="/about">About</Link></a>
+              <Link to="/">Editor</Link>
+              <Link to="/scores">Scores</Link>
+              <Link to="/about">About</Link>
           </div>
         </nav>
       </div>

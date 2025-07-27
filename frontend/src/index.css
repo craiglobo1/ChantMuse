@@ -43,6 +43,14 @@ h1.Title{
   line-height: 1.1;
 }
 
+.playback-button{
+  background-color: #6b7b9c;
+  width: 60px;
+  height: 40px;
+  font-size: 3em;
+  user-select: none;
+  cursor: pointer; 
+}
 
 .Navbar{
   color: black;
