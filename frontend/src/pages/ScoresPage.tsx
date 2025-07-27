@@ -1,7 +1,5 @@
 import * as React from 'react';
 import Navbar from '../components/Navbar'
-import GabcEditor from '../components/gabceditor';
-import ChantRenderer from '../components/ChantRenderer';
 
 
 

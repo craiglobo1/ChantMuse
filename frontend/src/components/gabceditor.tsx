@@ -16,13 +16,13 @@ interface Props {
       onChange(val)
     }
 
-    const exportToGabc = () => {
-      const blob = new Blob([editorContent.current], { type: 'text/plain;charset=utf-8' })
-      const link = document.createElement('a')
-      link.href = URL.createObjectURL(blob)
-      link.download = 'chantmuse_export.gabc'
-      link.click()
-    }
+    // const exportToGabc = () => {
+    //   const blob = new Blob([editorContent.current], { type: 'text/plain;charset=utf-8' })
+    //   const link = document.createElement('a')
+    //   link.href = URL.createObjectURL(blob)
+    //   link.download = 'chantmuse_export.gabc'
+    //   link.click()
+    // }
 
     useEffect(() => {
       loader.init().then(monaco => {

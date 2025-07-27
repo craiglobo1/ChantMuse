@@ -1,4 +1,3 @@
-import { useState } from "react";
 
 export default function Toggle(props: { text: string; isOn: boolean; onToggle: (isOn: boolean) => void; }) {
   const { text, isOn, onToggle } = props;
