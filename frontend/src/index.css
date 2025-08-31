@@ -44,12 +44,7 @@ h1.Title{
 }
 
 .playback-button{
-  background-color: #6b7b9c;
-  width: 60px;
-  height: 40px;
-  font-size: 3em;
-  user-select: none;
-  cursor: pointer; 
+  margin-bottom: 2em !important; 
 }
 
 .Navbar{
@@ -68,16 +63,7 @@ h1.Title{
   color: #1e40af;
 }
 
-button#ThemeSwitch{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  cursor: pointer;
-  /* background: unset;
-  color: unset; */
+.logo-icon{
+  width: 72px;
+  height: 72px;
 }

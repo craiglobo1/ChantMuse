@@ -7,7 +7,9 @@
 #root {
   width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   padding-left: 5rem;
   padding-right: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+
 }

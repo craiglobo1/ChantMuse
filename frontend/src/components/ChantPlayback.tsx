@@ -3,7 +3,8 @@ import * as React from 'react';
 import * as exsurge from '../lib/exsurge/exsurge.es.js'
 
 import * as Tone from "tone";
-
+import Button from '@mui/material/Button';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 interface props {
     audioMappings: Array<{ pitch: exsurge.GabcPitch, duration: number }>
@@ -45,7 +46,7 @@ const ChantPlayback: React.FC<props> = ({ audioMappings }) => {
   };
 
   return (
-    <div onClick={() => playAudio(audioMappings)} className="playback-button rounded-full w-xs h-xs flex items-center justify-center">▸</div>
+    <Button onClick={() => playAudio(audioMappings)}  size='small' variant='contained' color="error" className='playback-button'><PlayArrowIcon sx={{ fontSize: 'medium' }} /> play</Button>
   );
 };
 

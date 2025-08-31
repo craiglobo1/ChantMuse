@@ -24,7 +24,6 @@ export default class EditorPage extends React.Component{
         return (
             <div>
                 <Navbar />
-                <h1 className='dark:text-white Title'>ChantMuse</h1>
                 <ChantPlayback audioMappings={this.state.audioMappings} />
                 <ChantRenderer gabc={this.state.gabcText} onAudioMappingsChange={this.handleAudioMappingsChange} />
                 <GabcEditor value={this.state.gabcText} onChange={this.handleGabcChange}/>
