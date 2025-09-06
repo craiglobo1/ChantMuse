@@ -45,7 +45,7 @@ const ChantRenderer: React.FC<Props> = ({ gabc, onAudioMappingsChange }) => {
 
       // Step 3: Layout and render
       score.performLayout(ctxt)
-      score.layoutChantLines(ctxt, 1000, () => {
+      score.layoutChantLines(ctxt, 1090, () => {
         const svgHtml = score.createSvg(ctxt)
         if (containerRef.current) {
           containerRef.current.innerHTML = svgHtml

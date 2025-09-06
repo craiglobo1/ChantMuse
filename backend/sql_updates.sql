@@ -5,8 +5,6 @@ create table chant (
     title varchar(255),
     mode varchar(20),
     gabc text,
-    created_at datetime
+    created_at datetime DEFAULT CURRENT_TIMESTAMP
 );
-ALTER TABLE chant
-MODIFY COLUMN created_at DATETIME DEFAULT CURRENT_TIMESTAMP;
 
