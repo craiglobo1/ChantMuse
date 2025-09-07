@@ -20,15 +20,14 @@ ChantMuse is a modern web-based editor for Gregorian chant using the GABC format
 - [ ] Create searchbar
 - [ ] Add filters to the searchbar
 - [ ] Import Gregobase & CantusDB? Chants
-- [ ] 
 
-## 🚀 Additional Nice to Haves (Phase 2)
-- Login via Gmail SSO and Patreon SSO
-- Comprehensive about us page
-- Create OMR tech stack
-- edit chant using GUI and not only gabc (Maybe intermediate format)
-- connect playback to audio plugins with midi?
-- 
+## 🚀 Additional Nice to Haves (Phase 3)
+- [ ] Login via Gmail SSO and Patreon SSO
+- [ ] Comprehensive about us page
+- [ ] Create OMR tech stack
+- [ ] Edit chant using GUI and not only gabc (Maybe intermediate format)
+- [ ] Transcribe latin chant to english via syllables as some llm's
+- [ ] Connect playback to audio plugins with midi?
 
 
 
@@ -36,12 +35,11 @@ ChantMuse is a modern web-based editor for Gregorian chant using the GABC format
 - React + TypeScript + Vite
 - Monaco Editor (VS Code engine)
 - Postgress DB
-- 
-- Deployed via AWS Amplify
+- Docker composed
 
 
 
-## 🛠 Setup
+## 🛠 Setup - development
 
 ```bash
 # 1. Clone the repo
@@ -53,3 +51,5 @@ npm install
 
 # 3. Start the dev server
 npm run dev
+```
+
