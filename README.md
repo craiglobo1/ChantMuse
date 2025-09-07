@@ -9,7 +9,7 @@ ChantMuse is a modern web-based editor for Gregorian chant using the GABC format
 - [x] Basic syntax validation
 - [x] Render Chant
 - [x] Playback for the chant
-- [ ] Setting up docker compose
+- [x] Setting up docker compose
 - [ ] Create UI for publishing (Title, tags, description, publish etc)
 - [ ] Setup API w/ Postgress DB
 - [ ] Publish chants to DB
