@@ -38,11 +38,11 @@ interface Props {
     }, [])
 
     return (
-  <div className="pt-40 min-h-screen bg-gray-100 flex justify-center">
-    <div className="flex flex-col  items-center">
-      <div className="w-[800px] rounded-lg">
+  // <div className="min-h-screen bg-gray-100 rounded-lg" >
+      <div className="w-[1100px] rounded-lg" style={{border: "1px solid #ccc", borderRadius: "5px", padding: "5px"}}>
         <Editor
           height="400px"
+          
           defaultLanguage="gabc"
           value={value}
           onChange={handleEditorChange}
@@ -55,8 +55,7 @@ interface Props {
           }}
         />
       </div>
-    </div>
-  </div>
+  // </div>
 )
 
   }

@@ -9,7 +9,7 @@ export default function Navbar() {
       <nav className="bg-gray-800 p-4" style={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
         
         <div style={{cursor: 'pointer', paddingBottom : "20px"}} className='flex justify-between items-center' >
-             <img id="logo" src='/assets/ChantMuseLogoV2.png' alt="ChantMuse" style={{maxWidth: '20%', height: 'auto'}}  onClick={() => navigate('/')} />
+             <img id="logo" src='/assets/ChantMuseLogoV2.png' alt="ChantMuse" style={{maxWidth: '25%', height: 'auto'}}  onClick={() => navigate('/')} />
         </div>
 
 

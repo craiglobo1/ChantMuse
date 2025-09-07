@@ -4,10 +4,11 @@ import * as exsurge from '../lib/exsurge/exsurge.es.js'
 
 import * as Tone from "tone";
 import Button from '@mui/material/Button';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 interface props {
-    audioMappings: Array<{ pitch: exsurge.GabcPitch, duration: number }>
+  text : React.ReactElement,
+  color : "primary" | "secondary" | "error" | "info" | "success" | "warning" | undefined,
+  audioMappings: Array<{ pitch: exsurge.GabcPitch, duration: number }>
 }
 
 // convert a number from 0-11 to a pitch string
@@ -17,7 +18,7 @@ const numberToPitch = (pitch: number, octave: number): string => {
 }
 
 
-const ChantPlayback: React.FC<props> = ({ audioMappings }) => {
+const ChantPlayback: React.FC<props> = ({ text, color, audioMappings }) => {
   const [isPlaying, setIsPlaying] = React.useState(false);
 
   const synth = new Tone.AMSynth().toDestination();
@@ -46,7 +47,7 @@ const ChantPlayback: React.FC<props> = ({ audioMappings }) => {
   };
 
   return (
-    <Button onClick={() => playAudio(audioMappings)}  size='small' variant='contained' color="error" className='playback-button'><PlayArrowIcon sx={{ fontSize: 'medium' }} /> play</Button>
+    <Button onClick={() => playAudio(audioMappings)}  size='small' variant='contained' color={color} id='playback-button'>{text}</Button>
   );
 };
 

@@ -5,26 +5,13 @@
 
 
 #root {
-  width: 1280px;
-  margin: 0 auto;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-top: 1rem;
+  margin: 0 50px;
   padding-bottom: 2rem;
-
 }
 
 
 .Editor{
   align-content: center;
-}
-
-
-body {
-  margin: 0;
-  display: flex;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1.Title{
@@ -34,8 +21,10 @@ h1.Title{
   line-height: 1.1;
 }
 
-.playback-button{
+#playback-button{
   margin-bottom: 2em !important; 
+  margin: 8px 8px;
+
 }
 
 .Navbar{
@@ -43,6 +32,7 @@ h1.Title{
   font-family: 'Charis SIL', serif;
   font-size: 25px;
   user-select: none;
+  padding: 0px 15px;
   cursor: pointer; 
 }
 .Navbar > * a{
@@ -60,5 +50,5 @@ h1.Title{
 }
 
 .navbar-link{
-  font-size: large;
+  font-size: x-large;
 }
